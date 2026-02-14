@@ -1,0 +1,8 @@
+function toSnakeCase(text) {
+    return text
+        .replace(/([a-z])([A-Z])/g, '$1_$2') // camelCase to snake_case
+        .replace(/[\s\-]+/g, '_') // spaces and hyphens to underscores
+        .toLowerCase();
+}
+
+module.exports = toSnakeCase;
